@@ -1,0 +1,3 @@
+BEGIN
+	UPDATE room_info SET remain=remain-new.amount WHERE room_id=new.room_id AND date BETWEEN new.start_date AND new.leave_date;
+END
